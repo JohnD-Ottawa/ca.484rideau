@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --font-default : 'Roboto', 'Segoe UI', 'Oxygen', -apple-system, BlinkMacSystemFont,
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}

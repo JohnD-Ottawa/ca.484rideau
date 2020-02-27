@@ -1,0 +1,10 @@
+{
+    "components" : {
+        "navbar" : {
+            "Buisiness_Name"    : {
+                "English"   : "484 Rideau",
+                "French"    : "484 Rideau"
+            }
+        }
+    }
+}

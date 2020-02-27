@@ -1,0 +1,10 @@
+{
+    "components" : {
+        "navbar" : {
+            "Logo"    : {
+                "Thumbnail"     : "",
+                "Large"         : ""
+            }
+        }
+    }
+}
