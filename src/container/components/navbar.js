@@ -9,7 +9,7 @@ import BRAND_IMG from "../../assets/images/NavBar/Placeholder-Brand.jpg";
 function navbar(props) {
   return (
     <React.Fragment>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-nav ">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light bg-nav ">
         <TOGGLE_BUTTON />
         <BRAND />
         <COLLAPSE />

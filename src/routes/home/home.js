@@ -3,6 +3,7 @@
 import React from "react";
 // imports : Components
 import Carousel from "./components/carousel.js";
+import Memberships from "./components/memberships.js";
 import InfoCards from "./components/info_cards.js";
 
 class Home extends React.Component {
@@ -10,6 +11,7 @@ class Home extends React.Component {
     return (
       <div>
         <Carousel />
+        <Memberships />
         <InfoCards />
       </div>
     );
