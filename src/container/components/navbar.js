@@ -4,12 +4,12 @@ import React from "react";
 import { BrowserRouter as Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import BRAND_IMG from "../../assets/images/NavBar/Placeholder-Brand.jpg";
+import BRAND_IMG from "../../assets/images/NavBar/Placeholder-Brand.png";
 
 function navbar(props) {
   return (
     <React.Fragment>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light bg-nav ">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav bg-nav ">
         <TOGGLE_BUTTON />
         <BRAND />
         <COLLAPSE />
@@ -57,7 +57,7 @@ function COLLAPSE(props) {
   return (
     <div class="collapse navbar-collapse" id="navbarToggler">
       {/* Main Navigation Links */}
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-2">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-4">
         <li class="nav-item">
           {/* <Link to="/home" className="nav-link">
             Home

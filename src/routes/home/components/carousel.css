@@ -11,17 +11,26 @@
 .slide-caption h1 {
   font-family: Helvetica;
   font-size: 5vw;
-  text-shadow: 2px 2px 6px #000;
+  margin: 0;
+}
+
+.slide-caption h2 {
+  font-family: Helvetica;
+  font-size: 4vw;
+  color: white;
+}
+
+.car-btn {
+  border-width: 4px;
+  background-color: rgba(185, 151, 91, 0.15);
 }
 
 .header button {
   font-size: 2rem;
-  width: 100%;
 }
 
 .header h1 {
   color: white;
-  padding: 20px 20px 20px 10px;
 }
 
 .App_carousel {

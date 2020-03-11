@@ -17,14 +17,28 @@ function carousel(props) {
         data-ride="carousel"
       >
         <div className="App_carousel">
-          <div className="header">
-            <div className="slide-caption">
-              <h1>484 CREATIVE COLLAB SPACE</h1>
-              <button type="button" className="btn btn-success">
-                APPLY NOW!
-              </button>
+          {/* Header */}
+          <div className="header bg-nav">
+            <div className="slide-caption d-flex flex-column w-100 p-0">
+              <h1 className="w-100 text-center font-weight-bolder">
+                484 RIDEAU STREET
+              </h1>
+              <h2 className="w-100 text-center">
+                <small>Teamwork makes the dream work...</small>
+              </h2>
+              <div className="w-100 d-flex mt-3 justify-content-center">
+                <button
+                  class="btn btn-outline-Gold font-weight-bolder car-btn my-2 my-sm-0 w-50"
+                  data-toggle="modal"
+                  data-target="#ApplyModal"
+                >
+                  Apply Now!
+                </button>
+              </div>
             </div>
           </div>
+
+          {/* Indicators */}
           <ol className="carousel-indicators">
             <li
               data-target="#carouselExampleCaptions"
@@ -34,17 +48,14 @@ function carousel(props) {
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
+
           <div className="carousel-inner">
-            <div
-              className="carousel-item active"
-              style={{ backgroundColor: "green" }}
-            >
+            <div className="carousel-item active">
               <img
                 src={image1}
                 className="d-block w-100"
                 alt="random carousel"
               />
-              <div className="carousel-caption d-none d-md-block"></div>
             </div>
             <div className="carousel-item">
               <img
@@ -52,7 +63,6 @@ function carousel(props) {
                 className="d-block w-100"
                 alt="random carousel"
               />
-              <div className="carousel-caption d-none d-md-block"></div>
             </div>
             <div className="carousel-item">
               <img
@@ -60,7 +70,6 @@ function carousel(props) {
                 className="d-block w-100"
                 alt="random carousel"
               />
-              <div className="carousel-caption d-none d-md-block"></div>
             </div>
           </div>
         </div>
