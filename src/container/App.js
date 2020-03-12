@@ -50,6 +50,7 @@ class App extends React.Component {
         <Router>
           <div className="App">
             <NavBar />
+            <SocialIconsLG />
             <Switch>
               <Route path="/blog">{/* <Home /> */}</Route>
               <Route path="/home">
@@ -59,7 +60,6 @@ class App extends React.Component {
                 <Redirect to="/home" />
               </Route>
             </Switch>
-
             <Footer />
             <Modal />
           </div>
@@ -67,6 +67,32 @@ class App extends React.Component {
       </React.Fragment>
     );
   }
+}
+
+function SocialIconsLG() {
+  return (
+    <div className="d-none d-lg-block">
+      <div className="test hidden-md-down d-flex align-items-center">
+        <div className="test2">
+          <div class="d-flex facebook test3 justify-content-center align-items-center mb-1 text-white rounded-right">
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} size="lg" />
+          </div>
+          <div class="d-flex twitter test3 justify-content-center align-items-center mb-1 text-white rounded-right">
+            <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" />
+          </div>
+          <div class="d-flex youtube test3 justify-content-center align-items-center mb-1 text-white rounded-right">
+            <FontAwesomeIcon icon={["fab", "youtube"]} size="lg" />
+          </div>
+          <div class="d-flex whatsapp test3 justify-content-center align-items-center mb-1 text-white rounded-right">
+            <FontAwesomeIcon icon={["fab", "whatsapp"]} size="lg" />
+          </div>
+          <div class="d-flex instagram test3 justify-content-center align-items-center text-white rounded-right">
+            <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
