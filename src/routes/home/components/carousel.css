@@ -9,24 +9,23 @@
 }
 
 .slide-caption h1 {
-  font-family: Helvetica;
-  font-size: 5vw;
+  font-family: var(--font-display);
+  font-size: 7vw;
   margin: 0;
 }
 
 .slide-caption h2 {
-  font-family: Helvetica;
-  font-size: 4vw;
+  font-family: var(--font-sans);
+  font-size: 3.5vw;
   color: white;
 }
 
 .car-btn {
-  border-width: 4px;
-  background-color: rgba(185, 151, 91, 0.15);
-}
-
-.header button {
-  font-size: 2rem;
+  border-width: 3px;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-family: var(--font-display);
+  font-size: 1.5em;
+  width: 40%;
 }
 
 .header h1 {

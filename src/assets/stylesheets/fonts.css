@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
 :root {
-    --font-default : 'Roboto', 'Segoe UI', 'Oxygen', -apple-system, BlinkMacSystemFont,
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  --font-display: "Abril Fatface", cursive;
+  --font-sans: "Josefin Sans", sans-serif;
 }

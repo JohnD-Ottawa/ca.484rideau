@@ -21,7 +21,7 @@ function navbar(props) {
 function TOGGLE_BUTTON(props) {
   return (
     <button
-      className="navbar-toggler btn btn-outline-Gold"
+      className="navbar-toggler"
       data-toggle="collapse"
       data-target="#navbarToggler"
       aria-controls="navbarToggler"
@@ -57,32 +57,25 @@ function COLLAPSE(props) {
   return (
     <div class="collapse navbar-collapse" id="navbarToggler">
       {/* Main Navigation Links */}
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-4">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-4 text-sans">
         <li class="nav-item">
-          {/* <Link to="/home" className="nav-link">
-            Home
-          </Link> */}
           <NavLink to="/home" className="nav-link" activeClassName="active">
             Home
           </NavLink>
         </li>
         <li class="nav-item">
-          <NavLink
-            to="/blog"
-            className="nav-link disabled"
-            activeClassName="active"
-          >
+          <NavLink to="/blog" className="nav-link" activeClassName="active">
             Blog (Coming Soon)
           </NavLink>
         </li>
       </ul>
 
       <button
-        class="btn btn-outline-Gold my-2 my-sm-0"
+        class="btn btn-outline-light my-2 my-sm-0 text-display"
         data-toggle="modal"
         data-target="#ApplyModal"
       >
-        Apply Now!
+        Join Today
       </button>
     </div>
   );

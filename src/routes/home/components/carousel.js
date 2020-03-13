@@ -40,11 +40,11 @@ function Header() {
         </h2>
         <div className="w-100 d-flex mt-3 justify-content-center">
           <button
-            class="btn btn-outline-Gold font-weight-bolder car-btn my-2 my-sm-0 w-50"
+            class="btn btn-outline-light car-btn my-2 my-sm-0"
             data-toggle="modal"
             data-target="#ApplyModal"
           >
-            Apply Now!
+            Join Today
           </button>
         </div>
       </div>
