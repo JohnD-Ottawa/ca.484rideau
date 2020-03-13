@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter as Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import BRAND_IMG from "../../assets/images/NavBar/Placeholder-Brand.png";
+import BRAND_IMG from "../../../assets/images/NavBar/Placeholder-Brand.png";
 
 function navbar(props) {
   return (

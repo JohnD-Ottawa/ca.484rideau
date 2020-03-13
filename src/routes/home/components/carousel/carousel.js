@@ -4,9 +4,9 @@ import React from "react";
 // imports : Stylesheets
 import "./carousel.css";
 // imports : Images
-import image1 from "../../../assets/images/home/carousel_image_1.jpg";
-import image2 from "../../../assets/images/home/carousel_image_2.jpg";
-import image3 from "../../../assets/images/home/carousel_image_3.jpg";
+import image1 from "../../../../assets/images/home/carousel_image_1.jpg";
+import image2 from "../../../../assets/images/home/carousel_image_2.jpg";
+import image3 from "../../../../assets/images/home/carousel_image_3.jpg";
 
 const CAROUSEL_IMAGES = [image1, image2, image3];
 
