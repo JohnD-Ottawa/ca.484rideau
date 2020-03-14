@@ -5,3 +5,14 @@
   --font-display: "Abril Fatface", cursive;
   --font-sans: "Josefin Sans", sans-serif;
 }
+
+th {
+  font-family: var(--font-display);
+}
+
+.text-display {
+  font-family: var(--font-display);
+}
+.text-sans {
+  font-family: var(--font-sans);
+}

@@ -40,7 +40,7 @@ function Header() {
         </h2>
         <div className="w-100 d-flex mt-3 justify-content-center">
           <button
-            class="btn btn-outline-light car-btn my-2 my-sm-0"
+            className="btn btn-outline-light car-btn my-2 my-sm-0"
             data-toggle="modal"
             data-target="#ApplyModal"
           >
@@ -55,6 +55,7 @@ function Header() {
 function Indicators() {
   let items = CAROUSEL_IMAGES.map((element, index) => (
     <li
+      key={index}
       data-target="#carouselExampleCaptions"
       className={index === 0 ? "active" : ""}
       data-slide-to={`${index}`}
@@ -65,7 +66,7 @@ function Indicators() {
 
 function CarouselInner() {
   let items = CAROUSEL_IMAGES.map((element, index) => (
-    <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
+    <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
       <img src={element} className="d-block w-100" alt="carousel" />
     </div>
   ));

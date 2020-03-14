@@ -9,7 +9,7 @@ import BRAND_IMG from "../../../assets/images/NavBar/Placeholder-Brand.png";
 function navbar(props) {
   return (
     <React.Fragment>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav bg-nav ">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-nav bg-nav ">
         <TOGGLE_BUTTON />
         <BRAND />
         <COLLAPSE />
@@ -55,15 +55,15 @@ function BRAND(props) {
 
 function COLLAPSE(props) {
   return (
-    <div class="collapse navbar-collapse" id="navbarToggler">
+    <div className="collapse navbar-collapse" id="navbarToggler">
       {/* Main Navigation Links */}
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-4 text-sans">
-        <li class="nav-item">
+      <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ml-0 ml-lg-4 text-sans">
+        <li className="nav-item">
           <NavLink to="/home" className="nav-link" activeClassName="active">
             Home
           </NavLink>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <NavLink to="/blog" className="nav-link" activeClassName="active">
             Blog (Coming Soon)
           </NavLink>
@@ -71,7 +71,7 @@ function COLLAPSE(props) {
       </ul>
 
       <button
-        class="btn btn-outline-light my-2 my-sm-0 text-display"
+        className="btn btn-outline-light my-2 my-lg-0 text-display"
         data-toggle="modal"
         data-target="#ApplyModal"
       >

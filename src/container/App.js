@@ -7,16 +7,12 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // imports : Components
 import NavBar from "./components/navbar/navbar.js";
 import Home from "../routes/home/home.js";
 import Footer from "./components/footer/footer.js";
 import Modal from "./components/modal/modal.js";
-// imports : Assets
-import STRINGS from "../assets/strings/strings.json";
-import IMAGES from "../assets/images/images.json";
 
 const INITIAL_STATE = {
   config: {
@@ -59,11 +55,11 @@ class App extends React.Component {
 
 function SocialIconsLG() {
   const SOCIALMEDIA = [
-    { icon: "facebook-f", className: "facebook" },
-    { icon: "twitter", className: "twitter" },
-    { icon: "youtube", className: "youtube" },
-    { icon: "whatsapp", className: "whatsapp" },
-    { icon: "instagram", className: "instagram" }
+    { icon: "facebook-f", className: "bg-facebook" },
+    { icon: "twitter", className: "bg-twitter" },
+    { icon: "youtube", className: "bg-youtube" },
+    { icon: "whatsapp", className: "bg-whatsapp" },
+    { icon: "instagram", className: "bg-instagram" }
   ];
   return (
     <div className="d-none d-lg-block">
@@ -71,7 +67,8 @@ function SocialIconsLG() {
         <div className="test2">
           {SOCIALMEDIA.map((element, index) => (
             <div
-              class={`d-flex ${
+              key={index}
+              className={`d-flex ${
                 element.className
               } test3 justify-content-center align-items-center ${
                 index !== 0 ? "mt-1" : ""

@@ -46,30 +46,12 @@ img {
   cursor: pointer;
   transition: 0.15s ease-out;
 }
-
-.text-display {
-  font-family: var(--font-display);
-}
-.text-sans {
-  font-family: var(--font-sans);
-}
 .test3:hover {
   width: calc(40px + 5px);
   padding-left: 5px;
 }
 
-.facebook {
-  background-color: var(--facebook);
-}
-.twitter {
-  background-color: var(--twitter);
-}
-.youtube {
-  background-color: var(--youtube);
-}
-.whatsapp {
-  background-color: var(--whatsapp);
-}
-.instagram {
-  background-color: var(--instagram);
+.section {
+  margin: 0 auto;
+  width: 85%;
 }

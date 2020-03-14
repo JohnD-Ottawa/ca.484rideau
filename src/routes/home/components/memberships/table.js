@@ -1,8 +1,13 @@
+import React from "react";
+
 class Info {
   constructor(WIFM, Membership, Standalone) {
     this.WIFM = WIFM;
     this.Membership = Membership;
     this.Standalone = Standalone;
+  }
+  getKeys() {
+    return ["WIFM", "Membership", "Standalone"];
   }
 }
 
@@ -25,7 +30,7 @@ const TABLE_INFO = [
 
 function Table() {
   return (
-    <table className="table">
+    <table className="table text-light">
       <Header />
       <Body />
     </table>
@@ -36,8 +41,11 @@ function Header() {
   return (
     <thead>
       <tr>
-        {TABLE_INFO.keys.map(element => (
-          <th scope="col"> {element} </th>
+        {TABLE_INFO[0].getKeys().map((element, index) => (
+          <th key={index} scope="col">
+            {" "}
+            {element}{" "}
+          </th>
         ))}
       </tr>
     </thead>
@@ -48,7 +56,7 @@ function Body() {
   return (
     <tbody>
       {TABLE_INFO.map((element, index) => (
-        <tr>
+        <tr key={index}>
           <th scope="row">{element.WIFM}</th>
           {index !== TABLE_INFO.length - 1 ? (
             <React.Fragment>
@@ -66,3 +74,4 @@ function Body() {
     </tbody>
   );
 }
+export default Table;
