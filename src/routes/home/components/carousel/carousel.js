@@ -67,7 +67,7 @@ function Indicators() {
 function CarouselInner() {
   let items = CAROUSEL_IMAGES.map((element, index) => (
     <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-      <img src={element} className="d-block w-100" alt="carousel" />
+      <img src={element} className="d-block w-100 img-blur" alt="carousel" />
     </div>
   ));
   return <div className="carousel-inner">{items}</div>;

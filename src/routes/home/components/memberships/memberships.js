@@ -9,35 +9,58 @@ import "./memberships.css";
 function memberships() {
   return (
     <React.Fragment>
-      <section className="section text-light mt-3 mt-md-5 mb-3 mb-md-5">
-        <div className="">
-          <h3 className="mt-0 mb-1 text-display header-text">What we offer</h3>
-          <hr className="gradient_line m-0 mb-3 rounded-pill" />
-          <div className="text-justify body-text">
+      <section className="section row">
+        <div className="text-light col-12 col-lg-6 mb-3 mb-lg-0 d-flex align-items-start flex-column">
+          <h3 className="mt-0 mb-2 text-display header-text">
+            What can 484 Rideau do for you?
+          </h3>
+          <div className="text-justify body-text app-text-muted">
             <small>
-              When you work as many hours as you sleep, it’s important to love
-              where you work. After working remotely in noisy coffee shops and
-              being socially isolated at home, we realized the need for a better
-              alternative. Our goal at Coworkly is to create a happy work
-              environment where social isolation and distractions are eliminated
-              and friendships and productivity thrive.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              metus est, ornare eget ullamcorper vel, auctor sed quam. Phasellus
+              vel mi ullamcorper, dignissim dui vel, auctor odio. Sed viverra
+              velit sed ipsum scelerisque, in faucibus risus dapibus. Praesent
+              nec arcu sed tellus pharetra laoreet. Integer ut gravida massa.
+              Vestibulum eu odio volutpat, interdum urna eu, tristique justo.
+              Nulla venenatis, massa dignissim tristique pretium, nibh lacus
+              congue urna, quis ullamcorper velit ipsum et ex.
+              <br />
+              Etiam eget mollis quam, a vulputate lorem. Vestibulum sagittis sem
+              ex, nec convallis tellus feugiat et. Aliquam elementum arcu nisl,
+              et egestas arcu finibus vitae. Mauris mattis gravida enim.
+              Curabitur imperdiet, ligula quis laoreet auctor, dolor orci
+              vulputate tortor, nec bibendum ipsum neque eu velit. Pellentesque
+              dui magna, cursus ut ligula vitae, varius aliquam elit.
+              Suspendisse ornare risus in nisl suscipit, nec tempor ante
+              convallis.
+              <br />
+              Cras elementum, velit non tempus aliquet, metus tellus hendrerit
+              velit, sit amet laoreet turpis ipsum nec velit. Integer sed est
+              sit amet enim feugiat elementum quis non ex. Donec consequat vel
+              lectus eu suscipit. Integer ut sagittis arcu, non dictum ligula.
+              In viverra et leo ut accumsan. Quisque venenatis eu ex at
+              tincidunt. Proin lobortis ante non quam consequat sollicitudin.
+              Nullam a turpis vel ante hendrerit pulvinar. Nulla a augue eu
+              nulla dictum tempus vel in magna.
+              <br />
             </small>
           </div>
+          <footer class="blockquote-footer">
+            <small class="font-italic text-light">
+              Regards, The Team @ 484 Rideau
+            </small>
+          </footer>
+          <div className="mt-auto w-100 text-center py-2 py-lg-1">
+            <button
+              className="btn btn-outline-light btn-test text-display"
+              data-toggle="modal"
+              data-target="#ApplyModal"
+            >
+              Join Today
+            </button>
+          </div>
         </div>
-
-        <div id="read-more" className="mt-3">
-          <a
-            className=""
-            data-toggle="collapse"
-            href="#multiCollapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="multiCollapse"
-          >
-            Learn More
-          </a>
-        </div>
-        <div className="collapse multi-collapse mt-4" id="multiCollapse">
+        <div className="col-12 col-lg-6 p-0">
           <Table />
         </div>
       </section>

@@ -8,7 +8,7 @@ import Memberships from "./components/memberships/memberships.js";
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="home-main">
         <Carousel />
         <Memberships />
       </div>

@@ -1,3 +1,7 @@
+html {
+  background-color: var(--bg_main);
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +9,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg_main);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .App {
@@ -13,6 +17,12 @@ body {
   overflow: auto;
   margin: 0;
   padding: 0;
+}
+
+.section {
+  margin: 0 auto;
+  width: 93vw;
+  padding: 15px 0;
 }
 
 .NavBrand {
@@ -23,9 +33,9 @@ body {
 img {
   object-fit: cover;
 }
-
-.bg-nav {
-  background-color: var(--nav_bg);
+.img-blur {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 .test {
@@ -49,9 +59,4 @@ img {
 .test3:hover {
   width: calc(40px + 5px);
   padding-left: 5px;
-}
-
-.section {
-  margin: 0 auto;
-  width: 85%;
 }
