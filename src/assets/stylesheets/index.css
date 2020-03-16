@@ -75,6 +75,7 @@ img {
 }
 .lh-test {
   line-height: 125%;
+  white-space: pre-wrap;
 }
 .truncate {
   width: auto;

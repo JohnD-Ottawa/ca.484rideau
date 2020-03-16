@@ -13,7 +13,7 @@ const USERS = [
     job: "Singer / Songwriter / Crazy Person",
     photo: USER1,
     text:
-      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla. \n Donec lacinia congue felis in faucibus. Cras purus odio,vestibulum in vulputate at, tempus viverra turpis. Fuscecondimentum nunc ac nisi vulputate fringilla. Donec laciniacongue felis in faucibus."
+      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fuscecondimentum nunc ac nisi vulputate fringilla. Donec laciniacongue felis in faucibus."
   },
   {
     name: "George Carlin Longname",
@@ -27,7 +27,7 @@ const USERS = [
     job: "Actress",
     photo: USER3,
     text:
-      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla. \n Donec lacinia congue felis in faucibus. Cras purus odio,vestibulum in vulputate at, tempus viverra turpis."
+      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Suspendisse sit amet purus enim. Phasellus viverra ultricies nisi vel feugiat. Donec vel rutrum metus."
   }
 ];
 
@@ -53,7 +53,9 @@ function Card(props) {
           <span className="mr-3 align-self-start">
             <FontAwesomeIcon icon={["fas", "quote-left"]} size="lg" />
           </span>
-          <div class="media-body text-justify lh-test">{props.user.text}</div>
+          <div class="media-body text-justify lh-test">
+            <p>{props.user.text}</p>
+          </div>
         </div>
         <div class="card-padding mt-auto pt-0 pt-lg-2">
           <div class="media">

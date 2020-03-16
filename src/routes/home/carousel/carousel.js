@@ -10,8 +10,17 @@ import image3 from "../../../assets/images/home/carousel_image_3.jpg";
 import image4 from "../../../assets/images/home/carousel_image_4.jpg";
 import image5 from "../../../assets/images/home/carousel_image_5.jpg";
 import image6 from "../../../assets/images/home/carousel_image_6.jpg";
+import image7 from "../../../assets/images/home/carousel_image_7.jpg";
 
-const CAROUSEL_IMAGES = [image1, image2, image3, image4, image5, image6];
+const CAROUSEL_IMAGES = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7
+];
 
 function carousel(props) {
   return (
