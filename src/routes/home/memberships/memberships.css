@@ -34,3 +34,6 @@ th {
 .table > tbody > tr > td {
   vertical-align: middle;
 }
+.text-test {
+  font-size: 1em;
+}

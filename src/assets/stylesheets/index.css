@@ -60,3 +60,29 @@ img {
   width: calc(40px + 5px);
   padding-left: 5px;
 }
+.social-test {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.user-profile {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.card-padding {
+  padding: 20px;
+}
+.lh-test {
+  line-height: 125%;
+}
+.truncate {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lh-hun {
+  line-height: 100%;
+  font-size: 1em;
+}

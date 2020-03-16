@@ -62,7 +62,7 @@ function Body() {
         >
           {index !== TABLE_INFO.length - 1 ? (
             <React.Fragment>
-              <td scope="row">
+              <td>
                 <small>{element.WIFM}</small>
               </td>
               <td>

@@ -6,6 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import BRAND_IMG from "../../../assets/images/NavBar/Placeholder-Brand.png";
 
+const SOCIALMEDIA = [
+  { icon: "facebook-f", className: "bg-facebook" },
+  { icon: "twitter", className: "bg-twitter" },
+  { icon: "youtube", className: "bg-youtube" },
+  { icon: "whatsapp", className: "bg-whatsapp" },
+  { icon: "instagram", className: "bg-instagram" }
+];
+
 function navbar(props) {
   return (
     <React.Fragment>
@@ -69,7 +77,18 @@ function COLLAPSE(props) {
           </NavLink>
         </li>
       </ul>
-
+      <div className="d-lg-none d-flex py-2">
+        {SOCIALMEDIA.map((element, index) => (
+          <div
+            key={index}
+            className={`${element.className} ${
+              index !== 0 ? "ml-2" : ""
+            } social-test d-flex justify-content-center align-items-center text-white rounded`}
+          >
+            <FontAwesomeIcon icon={["fab", `${element.icon}`]} size="lg" />
+          </div>
+        ))}
+      </div>
       <button
         className="btn btn-outline-light my-2 my-lg-0 text-display"
         data-toggle="modal"

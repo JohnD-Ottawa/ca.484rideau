@@ -45,8 +45,8 @@ function memberships() {
               <br />
             </small>
           </div>
-          <footer class="blockquote-footer">
-            <small class="font-italic text-light">
+          <footer className="blockquote-footer">
+            <small className="font-italic text-light">
               Regards, The Team @ 484 Rideau
             </small>
           </footer>

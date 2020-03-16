@@ -4,11 +4,14 @@ import React from "react";
 // imports : Stylesheets
 import "./carousel.css";
 // imports : Images
-import image1 from "../../../../assets/images/home/carousel_image_1.jpg";
-import image2 from "../../../../assets/images/home/carousel_image_2.jpg";
-import image3 from "../../../../assets/images/home/carousel_image_3.jpg";
+import image1 from "../../../assets/images/home/carousel_image_1.jpg";
+import image2 from "../../../assets/images/home/carousel_image_2.jpg";
+import image3 from "../../../assets/images/home/carousel_image_3.jpg";
+import image4 from "../../../assets/images/home/carousel_image_4.jpg";
+import image5 from "../../../assets/images/home/carousel_image_5.jpg";
+import image6 from "../../../assets/images/home/carousel_image_6.jpg";
 
-const CAROUSEL_IMAGES = [image1, image2, image3];
+const CAROUSEL_IMAGES = [image1, image2, image3, image4, image5, image6];
 
 function carousel(props) {
   return (
