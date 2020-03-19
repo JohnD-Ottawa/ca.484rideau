@@ -9,23 +9,28 @@ import USER3 from "../../../assets/images/home/Users/user_2.jpg";
 
 const USERS = [
   {
-    name: "Taylor Swift",
-    job: "Singer / Songwriter / Crazy Person",
+    fn: "Marley",
+    ln: "Giunta",
+    job:
+      "Visionary, Community Leader, Nutrition & Wellness Expert, Entrepreneur & Artist",
     photo: USER1,
     text:
       "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fuscecondimentum nunc ac nisi vulputate fringilla. Donec laciniacongue felis in faucibus."
   },
   {
-    name: "George Carlin Longname",
-    job: "Comedian / Actor / Director / Cool Guy",
-    photo: USER2,
+    fn: "DANIEL",
+    ln: "MIRANDA",
+    job:
+      "Logistics Specialist, Visionary, Artist, Motivator, Provider & Investor",
+    photo: USER3,
     text:
       "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla."
   },
   {
-    name: "Kristen Bell",
-    job: "Actress",
-    photo: USER3,
+    fn: "TAYLOR",
+    ln: "MILES",
+    job: "Business Advisor, Philanthropist, Artist, Innovator & Entrepreneur",
+    photo: USER2,
     text:
       "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Suspendisse sit amet purus enim. Phasellus viverra ultricies nisi vel feugiat. Donec vel rutrum metus."
   }
@@ -34,7 +39,7 @@ const USERS = [
 function Testimonials() {
   return (
     <div className="section">
-      <h3 className="col m-0 text-display header-text text-white">Our Team</h3>
+      <h3 className="col m-0 text-display header-text text-white">Community</h3>
       <div className="row">
         {USERS.map((element, index) => (
           <Card user={element} />
@@ -54,7 +59,7 @@ function Card(props) {
             <FontAwesomeIcon icon={["fas", "quote-left"]} size="lg" />
           </span>
           <div class="media-body text-justify lh-test">
-            <p>{props.user.text}</p>
+            <p className="m-0">{props.user.text}</p>
           </div>
         </div>
         <div class="card-padding mt-auto pt-0 pt-lg-2">
@@ -65,10 +70,14 @@ function Card(props) {
               alt={props.name}
             />
             <div class="media-body align-self-center">
-              <h5 class="text-display m-0">
-                <small className="">{props.user.name}</small>
+              <h5 class="text-display m-0 text-uppercase w-100">
+                <small className="">
+                  {props.user.fn}
+                  <br />
+                  {props.user.ln}
+                </small>
               </h5>
-              <footer className="blockquote-footer app-text-muted mt-1">
+              <footer className="blockquote-footer app-text-muted mt-1 lh-test">
                 <small className="font-italic lh-hun">{props.user.job}</small>
               </footer>
             </div>

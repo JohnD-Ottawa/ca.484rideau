@@ -12,6 +12,8 @@ import image5 from "../../../assets/images/home/carousel_image_5.jpg";
 import image6 from "../../../assets/images/home/carousel_image_6.jpg";
 import image7 from "../../../assets/images/home/carousel_image_7.jpg";
 
+import LOGO from "../../../assets/images/484logo.png";
+
 const CAROUSEL_IMAGES = [
   image1,
   image2,
@@ -44,9 +46,12 @@ function Header() {
   return (
     <div className="header bg-nav">
       <div className="slide-caption d-flex flex-column w-100 p-0">
-        <h1 className="w-100 text-center font-weight-bolder">
+        {/* <h1 className="w-100 text-center font-weight-bolder">
           484 RIDEAU STREET
-        </h1>
+        </h1> */}
+        <div className="d-flex w-100 justify-content-center">
+          <img src={LOGO} className="w-50" />
+        </div>
         <h2 className="w-100 text-center">
           <small>Teamwork makes the dream work...</small>
         </h2>

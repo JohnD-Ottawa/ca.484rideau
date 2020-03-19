@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // imports : Components
 import NavBar from "./components/navbar/navbar.js";
 import Home from "../routes/home/home.js";
-import Footer from "./components/footer/footer.js";
 import Modal from "./components/modal/modal.js";
 
 const INITIAL_STATE = {
@@ -44,7 +43,6 @@ class App extends React.Component {
                 <Redirect to="/home" />
               </Route>
             </Switch>
-            <Footer />
             <Modal />
           </div>
         </Router>

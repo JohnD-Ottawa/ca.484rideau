@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(185, 151, 91, 0.175); */
 }
 
 .App {
@@ -86,4 +87,10 @@ img {
 .lh-hun {
   line-height: 100%;
   font-size: 1em;
+}
+.map {
+  height: 300px;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
 }

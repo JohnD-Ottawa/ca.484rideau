@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=BioRhyme&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
 
 :root {
-  --font-display: "Abril Fatface", cursive;
-  --font-sans: "Josefin Sans", sans-serif;
+  --font-display: "BioRhyme", serif;
+  --font-sans: "Cabin", sans-serif;
 }
 
 th {
