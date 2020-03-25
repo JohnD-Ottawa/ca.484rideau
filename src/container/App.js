@@ -69,9 +69,9 @@ function SocialIconsLG() {
       link: "https://www.youtube.com/"
     },
     {
-      icon: "whatsapp",
-      className: "bg-whatsapp",
-      link: "https://www.whatsapp.com/"
+      icon: "twitch",
+      className: "bg-twitch",
+      link: "https://www.twitch.tv/"
     },
     {
       icon: "instagram",

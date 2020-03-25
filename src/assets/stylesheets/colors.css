@@ -8,6 +8,7 @@
   --youtube: #c92228;
   --whatsapp: #27ae60;
   --text-muted: #aaa;
+  --twitch: #9146ff;
 }
 .bg-nav {
   background-color: var(--nav_bg);
@@ -26,6 +27,9 @@
 }
 .bg-instagram {
   background-color: var(--instagram);
+}
+.bg-twitch {
+  background-color: var(--twitch);
 }
 .app-text-muted {
   color: var(--text-muted);
