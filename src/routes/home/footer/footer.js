@@ -18,13 +18,13 @@ function footer(props) {
                   <td className="text-center">
                     <FontAwesomeIcon icon={["fas", "phone-alt"]} size="sm" />
                   </td>
-                  <td className="app-text-muted">1 (613) 794-2515</td>
+                  <td className="app-text-muted">1 (613) 123-4567</td>
                 </tr>
                 <tr>
                   <td className="text-center">
                     <FontAwesomeIcon icon={["fas", "envelope"]} size="sm" />
                   </td>
-                  <td className="app-text-muted">Support@484Rideau.ca</td>
+                  <td className="app-text-muted">484rideau@gmail.com</td>
                 </tr>
                 <tr>
                   <td className="text-center">
@@ -42,7 +42,9 @@ function footer(props) {
                   <td className="text-center">
                     <FontAwesomeIcon icon={["far", "clock"]} size="sm" />
                   </td>
-                  <td className="app-text-muted">Mon - Fri : 8am - 10pm</td>
+                  <td className="app-text-muted">
+                    Mon - Fri : CLOSED DUE TO CORONAVIRUS
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -51,6 +53,7 @@ function footer(props) {
 
         <div className="col-12 col-lg-6 p-0">
           <iframe
+            title="myMap"
             src="https://snazzymaps.com/embed/226862"
             width="100%"
             height="300px"

@@ -15,7 +15,7 @@ const USERS = [
       "Visionary, Community Leader, Nutrition & Wellness Expert, Entrepreneur & Artist",
     photo: USER1,
     text:
-      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fuscecondimentum nunc ac nisi vulputate fringilla. Donec laciniacongue felis in faucibus."
+      "Merley is having a baby and wasn't able to give us a quote. When she gives us one it'll be here! CONGRATULATIONS MARLEY :)"
   },
   {
     fn: "DANIEL",
@@ -24,15 +24,14 @@ const USERS = [
       "Logistics Specialist, Visionary, Artist, Motivator, Provider & Investor",
     photo: USER3,
     text:
-      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla."
+      "Just start! Whenever you aim for a worthy goal, the element of risk is at play. Remember that the biggest risk of all is being alive. Everything in between life and death is ours to create. It's just art."
   },
   {
     fn: "TAYLOR",
     ln: "MILES",
     job: "Business Advisor, Philanthropist, Artist, Innovator & Entrepreneur",
     photo: USER2,
-    text:
-      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc acnisi vulputate fringilla.\nDonec lacinia congue felis in faucibus. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Suspendisse sit amet purus enim. Phasellus viverra ultricies nisi vel feugiat. Donec vel rutrum metus."
+    text: "Even a correct decision is wrong if it was taken too late."
   }
 ];
 

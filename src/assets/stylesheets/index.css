@@ -94,3 +94,6 @@ img {
 .table > tbody > tr > td {
   vertical-align: middle;
 }
+.border-white {
+  border-color: grey !important;
+}
