@@ -25,7 +25,7 @@ const SOCIALMEDIA = [
   {
     icon: "twitch",
     className: "bg-twitch",
-    link: "https://www.twitch.tv/"
+    link: "https://www.twitch.tv/484rideau"
   },
   {
     icon: "instagram",
