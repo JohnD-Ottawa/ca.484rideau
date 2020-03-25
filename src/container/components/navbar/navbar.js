@@ -7,11 +7,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BRAND_IMG from "../../../assets/images/NavBar/Placeholder-Brand.png";
 
 const SOCIALMEDIA = [
-  { icon: "facebook-f", className: "bg-facebook" },
-  { icon: "twitter", className: "bg-twitter" },
-  { icon: "youtube", className: "bg-youtube" },
-  { icon: "whatsapp", className: "bg-whatsapp" },
-  { icon: "instagram", className: "bg-instagram" }
+  {
+    icon: "facebook-f",
+    className: "bg-facebook",
+    link: "https://www.facebook.com/484rideau/"
+  },
+  {
+    icon: "twitter",
+    className: "bg-twitter",
+    link: "https://twitter.com/home"
+  },
+  {
+    icon: "youtube",
+    className: "bg-youtube",
+    link: "https://www.youtube.com/"
+  },
+  {
+    icon: "whatsapp",
+    className: "bg-whatsapp",
+    link: "https://www.whatsapp.com/"
+  },
+  {
+    icon: "instagram",
+    className: "bg-instagram",
+    link: "https://www.instagram.com/484rideau/?igshid=1m0c6d2m1yfzo"
+  }
 ];
 
 function navbar(props) {
@@ -84,6 +104,7 @@ function COLLAPSE(props) {
             className={`${element.className} ${
               index !== 0 ? "ml-2" : ""
             } social-test d-flex justify-content-center align-items-center text-white rounded`}
+            onClick={OpenURLBlank(element.link)}
           >
             <FontAwesomeIcon icon={["fab", `${element.icon}`]} size="lg" />
           </div>
@@ -98,6 +119,13 @@ function COLLAPSE(props) {
       </button>
     </div>
   );
+}
+
+function OpenURLBlank(url) {
+  return function(e) {
+    console.log(url);
+    window.open(url, "_blank");
+  };
 }
 
 export default navbar;

@@ -53,11 +53,31 @@ class App extends React.Component {
 
 function SocialIconsLG() {
   const SOCIALMEDIA = [
-    { icon: "facebook-f", className: "bg-facebook" },
-    { icon: "twitter", className: "bg-twitter" },
-    { icon: "youtube", className: "bg-youtube" },
-    { icon: "whatsapp", className: "bg-whatsapp" },
-    { icon: "instagram", className: "bg-instagram" }
+    {
+      icon: "facebook-f",
+      className: "bg-facebook",
+      link: "https://www.facebook.com/484rideau/"
+    },
+    {
+      icon: "twitter",
+      className: "bg-twitter",
+      link: "https://twitter.com/home"
+    },
+    {
+      icon: "youtube",
+      className: "bg-youtube",
+      link: "https://www.youtube.com/"
+    },
+    {
+      icon: "whatsapp",
+      className: "bg-whatsapp",
+      link: "https://www.whatsapp.com/"
+    },
+    {
+      icon: "instagram",
+      className: "bg-instagram",
+      link: "https://www.instagram.com/484rideau/?igshid=1m0c6d2m1yfzo"
+    }
   ];
   return (
     <div className="d-none d-lg-block">
@@ -71,6 +91,7 @@ function SocialIconsLG() {
               } test3 justify-content-center align-items-center ${
                 index !== 0 ? "mt-1" : ""
               } text-white rounded-right`}
+              onClick={OpenURLBlank(element.link)}
             >
               <FontAwesomeIcon icon={["fab", `${element.icon}`]} size="lg" />
             </div>
@@ -79,6 +100,13 @@ function SocialIconsLG() {
       </div>
     </div>
   );
+}
+
+function OpenURLBlank(url) {
+  return function(e) {
+    console.log(url);
+    window.open(url, "_blank");
+  };
 }
 
 export default App;
